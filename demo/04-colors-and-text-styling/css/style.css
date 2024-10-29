@@ -1,0 +1,37 @@
+#first-paragraph{
+    color: lightcoral;
+    background-color: rgb(255, 231, 47);
+    font-style: italic;
+}
+
+#second-paragraph{
+    color: #33b8ff;
+    background-color: rgb(152, 251, 177);
+    font-size: 20px
+    
+}
+
+#bold-paragraph{
+    font-weight: bold;
+    background-color: rgb(192, 132, 255);
+    font-family: sans-serif;
+}
+
+#span1{
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#span2{
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+#span3{
+    background-color: yellow;
+}
+
+#span4{
+    text-align: right;
+}
