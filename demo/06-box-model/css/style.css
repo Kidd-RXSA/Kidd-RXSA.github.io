@@ -1,0 +1,14 @@
+div {
+    border: 15px solid rgb(236, 57, 57);
+    border-left: 15px dashed  black;
+    margin: 40px 0px;
+    padding: 24px 36px;
+    background-color: blanchedalmond;
+}
+
+p {
+    margin: 60px;
+    padding: 48px 60px;
+    background-color: red;
+    border-radius: 100px
+}
