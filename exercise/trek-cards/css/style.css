@@ -12,15 +12,48 @@
     max-width: 350px;
     border: 1px solid #e0ffde;
     border-radius: 8px;
-    background-color: #f7f7f7;
+    background-color: #eeffee;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
     transition: 
     transdorm 0.3 ease,
     box-shadow 0.3s ease;
 }
 
+.card-style-1:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .card-style-1 img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.card-style-1 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+    color: #192532
+}
+
+.card-style-1 p {
+    font-size: 16px;
+    padding: 0 16px 16px 16px;
+    color: #383838;
+    line-height: 1.2;
+}
+
+.card-style-1 a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    background-color: #008000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-style-1 a hover {
+    background-color: #368d3b;
 }
