@@ -107,3 +107,6 @@ p {
     gap: 5px;
 }
 
+.fa-heart, .fa-comment, .fa-image {
+    font-size: 28px;
+}
