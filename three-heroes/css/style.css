@@ -1,0 +1,111 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+
+.hero-left {
+   position: relative;
+    background-image: url('../images/nasa-hubble-space-telescope-xp_e2JVgSuE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    animation: heroFadeIn 3s ease-in-out;
+}
+
+@keyframes heroFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-right {
+    position: relative;
+    opacity: 0.85;
+    background-image: 
+    url(../images/zosia-szopka-j5HQf4MpXZQ-unsplash.jpg),
+    url(../images/grim-detta-vOT3c7Hm2Jw-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover, cover;
+    background-blend-mode: multiply;
+    background-position: center, center;
+    filter: blur(.50px);
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    height: 100vh;
+    
+}
+.hero-center {
+    position: relative;
+    background-image: url('../images/andrew-neel-wwQaXLF6stk-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    animation: backgroundFade 15s infinite;
+}
+
+.hero-center::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: contrast(1.2) brightness(0.9);
+    z-index: 1;
+}
+
+.hero-center * {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes backgroundFade {
+    0% { background-image: url(../images/andrew-neel-wwQaXLF6stk-unsplash.jpg); }
+    50% { background-image: url(../images/the-prototype-HvrzJBL8B0A-unsplash.jpg); }
+    100% { background-image: url(../images/andrew-neel-wwQaXLF6stk-unsplash.jpg); }
+}
+.hero-center {
+    position: relative;
+    background-image: url('../images/andrew-neel-wwQaXLF6stk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-link {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-link:hover {
+    background: #9dffd1;
+}
