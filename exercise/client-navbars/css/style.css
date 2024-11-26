@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: arial,sans-serif;
+    line-height: 1.6;
+}
+
+nav.sculptors-haven {
+    background-color: #7f5330;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.sculptors-haven ul {
+    list-style: noen;
+    display: flex;
+    gap: 40px;
+}
+
+nav.sculptors-haven a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.sculptors-haven a:hover {
+    color: #ffb464;
+}
+
+
+nav.angel-ears {
+    background-color: #e1cfb9;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.angel-ears ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav.angel-ears a {
+    color: #392522;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.angel-ears a:hover {
+    color: #ffa63f;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #e57300;
+}
+
+header.promo-banner {
+    background-color: #222;
+    color: #ff9800;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav.tailored-spooks {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.tailored-spooks ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav.tailored-spooks a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.tailored-spooks a:hover {
+    color: #ff9800; 
+}
+
+.signin-btn {
+    padding: 10px 20px;
+    background-color: #f57c00; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signin-btn:hover {
+    background-color: #e57300; 
+}
+
+nav.shopping-categories {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav.shopping-categories a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav.shopping-categories a:hover {
+    color: #ff9800; 
+}
