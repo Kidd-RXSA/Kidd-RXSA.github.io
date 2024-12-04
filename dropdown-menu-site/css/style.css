@@ -2,15 +2,158 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-
-body {
+    font-family: "Roboto", Arial, sans-serif;
+  }
+  
+  /* Body Style */
+  body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
+  }
+  
+  /* Navbar Style */
+  .navbar {
+    background-color: #ffcc66;
+    padding: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    text-decoration: none;
+    font-size: 56px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #0073e6;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffcc66;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu a {
+    color: #333;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Hero styling */
+  .hero {
+    background-image: url("../images/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animal Profile */
+  .animal {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .animal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  Footer style footer {
+    background-color: #ffcc66;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    color: #333;
+  }
+  
+  /* Media  */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 2em;
+    }
+  
+    .animal-profile {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      height: 200px;
+    }
+  
+    .hero h1 {
+      font-size: 1.5em;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .dropdown-menu {
+      position: static;
+    }
+  }
+  
