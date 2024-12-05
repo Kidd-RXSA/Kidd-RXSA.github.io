@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Final Project</title>
+    <title>Wrap it Up</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100..900&family=Pacifico&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-      <header>
+    <!-- Header -->
+    <header>
         <nav>
             <div class="logo">
-                <h1>Restaurant Name</h1>
+                <img src="images/wrap_it_up_logo-07.png" alt="Wrap It Up Logo" class="logo-img">
+                <h1 class="brand-name">Wrap It Up</h1>
             </div>
             <ul class="navbar">
                 <li><a href="#">Home</a></li>
@@ -21,16 +26,30 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h2>Welcome</h2>
-            <p>Discover our amazing dishes and enjoy a unique culinary experience!</p>
+            <h2>No Meat, All Treat</h2>
+            <p>Providing delicious, creative vegan wraps in a warm, inviting atmosphere.</p>
             <a href="#" class="cta-button">View Our Menu</a>
         </div>
     </section>
 
+    <section class="menu">
+        <h2>Our Delicious Vegan Wraps</h2>
+        <div class="menu-items">
+        <!-- Spicy Buffalo Cauliflower Wrap -->
+         <div class="menu-item" onclick="toggleDetails(this)">
+            <img src="images/buffalo-cauliflower.jpeg" alt="Spicy Buffalo Cauliflower Wrap">
+            <h3>Spicy Buffalo Cauliflower Wraps</h3>
+            <p>Price: $9.95</p>
+            <p>Ingredients: Crispy buffalo cauliflower bites, shredded lettuce, diced tomatoes, vegan ranch, lime.</p>
+            <p>Description: Crispy buffalo cauliflower bites, shredded lettuce, diced tomatoes, vegan ranch, and a hint of lime wrapped in a whole wheat tortilla.</p> 
+         </div>
+        </div>
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 [Restuarant Name]. All rights reserved.</p>
+        <p>&copy; 2024 Wrap It Up. All rights reserved.</p>
     </footer>
 </body>
 </html>
