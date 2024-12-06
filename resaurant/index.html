@@ -31,42 +31,44 @@
         <div class="hero-content">
             <h2>No Meat, All Treat</h2>
             <p>Providing delicious, creative vegan wraps in a warm, inviting atmosphere.</p>
-            <a href="#" class="cta-button">View Our Menu</a>
+            <a href="#menu-section" class="cta-button">View Our Menu</a>
         </div>
     </section>
 
-    <section class="menu">
+    <section id="menu-section" class="menu">
         <h2>Our Delicious Vegan Wraps</h2>
         <div class="menu-items">
-        <!-- Spicy Buffalo Cauliflower Wrap -->
-         <div class="menu-item" onclick="toggleDetails(this)">
+
+           <!-- Spicy Buffalo Cauliflower Wrap -->
+           <div class="menu-item" onclick="toggleDetails(this)">
             <img src="images/buffalo-cauliflower.jpeg" alt="Spicy Buffalo Cauliflower Wrap">
-            <h3>Spicy Buffalo Cauliflower Wraps</h3>
-            <p>Price: $9.95</p>
-            <p>Ingredients: Crispy buffalo cauliflower bites, shredded lettuce, diced tomatoes, vegan ranch, lime.</p>
-            <p>Description: Crispy buffalo cauliflower bites, shredded lettuce, diced tomatoes, vegan ranch, and a hint of lime wrapped in a whole wheat tortilla.</p> 
-         </div>
-        </div>
-<!-- 
-        Chickpea Avocado Smash Wrap -->
-        <div class="menu-item" onclick="toggleDetails(this)">
-            <img  src="images/chickpea-avocado.jpg" alt="Chickpea Avocado Smash Wrap">
-            <h3>Chickpea Avocado Smash Wrap</h3>
+            <h3>Spicy Buffalo Cauliflower Wrap</h3>
             <div class="menu-details">
-                <p>Price $8.75</p>
-                <p>Ingredients: Chickpeas, avocado, cucumbers, spinach, tahini dressing.</p>
-                <p>Description: Creamy smashed chickpeas with avocado, cucumbers, spinach, and a drizzle of tahini dressing in a spinach wrap.</p>
+                <p>Price: $9.95</p>
+                <p>Ingredients: Crispy buffalo cauliflower, shredded lettuce, diced tomatoes, vegan ranch (*contains soy*), lime juice, whole wheat tortilla (*contains gluten*).</p>
+                <p>Description: Imagine the crunch of buffalo cauliflower with just the right amount of spice. It's that kind of wrap that packs flavor in every bite, making you forget it's actually vegan. I promise, it's that good!</p>
             </div>
         </div>
 
-        <!-- BBQ Jackfruit Pulled Pork Wrap -->
+        <!-- Chickpea Avocado Smash Wrap -->
+        <div class="menu-item" onclick="toggleDetails(this)">
+            <img src="images/chickpea-avocado.jpg" alt="Chickpea Avocado Smash Wrap">
+            <h3>Chickpea Avocado Smash Wrap</h3>
+            <div class="menu-details">
+                <p>Price: $8.75</p>
+                <p>Ingredients: Chickpeas, avocado, cucumbers, spinach, tahini dressing (*contains sesame*), spinach wrap (*contains gluten*).</p>
+                <p>Description: Creamy chickpeas meet buttery avocado in this chill, easy-going wrap. It's crunchy, creamy, and just packed with all the freshness you crave when you're not trying too hard but still want something seriously tasty.</p>
+            </div>
+        </div>
+
+        <!-- BBQ Jackfruit Pulled 'Pork' Wrap -->
         <div class="menu-item" onclick="toggleDetails(this)">
             <img src="images/bbq-jackfruit.jpg" alt="BBQ Jackfruit Pulled 'Pork' Wrap">
             <h3>BBQ Jackfruit Pulled 'Pork' Wrap</h3>
             <div class="menu-details">
                 <p>Price: $10.50</p>
-                <p>Ingredients: BBQ jackfruit, coleslaw, pickled onions, spicy vegan mayo.</p>
-                <p>Description: BBQ jackfruit, coleslaw, pickled onions, and spicy vegan mayo in a toasted tortilla.</p>
+                <p>Ingredients: Jackfruit, BBQ sauce (*contains soy*), coleslaw (*contains soy*), pickled onions, spicy vegan mayo (*contains soy*), toasted tortilla (*contains gluten*).</p>
+                <p>Description: This wrap’s the closest thing you'll get to pulled pork without touching meat. Sweet, smoky, and with that little kick, it's the flavor that makes you feel like you're at a summer cookout any day of the year.</p>
             </div>
         </div>
 
@@ -76,19 +78,19 @@
             <h3>Falafel Crunch Wrap</h3>
             <div class="menu-details">
                 <p>Price: $9.25</p>
-                <p>Ingredients: Fresh falafel, cucumber, tomato, pickled turnips, garlic dill sauce.</p>
-                <p>Description: Fresh falafel, cucumber, tomato, pickled turnips, and garlic dill sauce wrapped in a warm pita.</p>
+                <p>Ingredients: Falafel (*contains gluten*), cucumber, tomato, pickled turnips, garlic dill sauce (*contains soy*), warm pita (*contains gluten*).</p>
+                <p>Description: The perfect balance of crispy falafel, fresh veggies, and a dill sauce that ties it all together. It's kind of like a street food favorite that’s got a little twist to keep it real interesting.</p>
             </div>
         </div>
 
-         <!-- Southwest Black Bean Wrap -->
+        <!-- Southwest Black Bean Wrap -->
         <div class="menu-item" onclick="toggleDetails(this)">
             <img src="images/southwest-blackbean.jpg" alt="Southwest Black Bean Wrap">
             <h3>Southwest Black Bean Wrap</h3>
             <div class="menu-details">
                 <p>Price: $8.95</p>
-                <p>Ingredients: Black beans, grilled corn, bell peppers, cilantro, vegan chipotle aioli, brown rice.</p>
-                <p>Description: Black beans, grilled corn, bell peppers, cilantro, vegan chipotle aioli, and brown rice wrapped in a tomato basil tortilla.</p>
+                <p>Ingredients: Black beans, grilled corn, bell peppers, cilantro, vegan chipotle aioli (*contains soy*), brown rice, tomato basil tortilla (*contains gluten*).</p>
+                <p>Description: Black beans, corn, and a chipotle kick – this one's got that classic Southwest vibe. It’s spicy, smoky, and hearty enough to keep you going, whether you’re hitting the streets or just chilling at home.</p>
             </div>
         </div>
 
@@ -98,8 +100,8 @@
             <h3>Teriyaki Tofu and Veggie Wrap</h3>
             <div class="menu-details">
                 <p>Price: $10.00</p>
-                <p>Ingredients: Teriyaki tofu, shredded carrots, red cabbage, edamame, green onions, sesame ginger dressing.</p>
-                <p>Description: Marinated teriyaki tofu, shredded carrots, red cabbage, edamame, and green onions with sesame ginger dressing.</p>
+                <p>Ingredients: Teriyaki tofu (*contains soy*), shredded carrots, red cabbage, edamame (*contains soy*), green onions, sesame ginger dressing (*contains sesame*).</p>
+                <p>Description: Teriyaki tofu with a hit of sesame ginger flavor – think sweet, tangy, and packed with veggies. It's the wrap you want when you’re craving something a bit out of the ordinary but still packed with comfort.</p>
             </div>
         </div>
 
@@ -109,10 +111,49 @@
             <h3>Vegan Crunchwrap Supreme</h3>
             <div class="menu-details">
                 <p>Price: $11.50</p>
-                <p>Ingredients: Seasoned lentils, tortilla chips, lettuce, tomatoes, vegan cheese, sour cream.</p>
-                <p>Description: Seasoned lentils, tortilla chips, shredded lettuce, tomatoes, vegan cheese, and sour cream layered in a crispy tortilla.</p>
+                <p>Ingredients: Seasoned lentils, tortilla chips (*contains corn*), lettuce, tomatoes, vegan cheese (*contains soy*), sour cream (*contains soy*), crispy tortilla (*contains gluten*).</p>
+                <p>Description: This is a game-changer. We got seasoned lentils, crunchy chips, creamy sour cream, all stuffed in a wrap that stays crispy. It’s indulgent, satisfying, and everything you need to hit the spot.</p>
             </div>
         </div>
+
+        <!-- Korean BBQ Mushroom Wrap -->
+        <div class="menu-item" onclick="toggleDetails(this)">
+            <img src="images/korean-bbq-mushroom.jpg" alt="Korean BBQ Mushroom Wrap">
+            <h3>Korean BBQ Mushroom Wrap</h3>
+            <div class="menu-details">
+                <p>Price: $10.95</p>
+                <p>Ingredients: Korean BBQ oyster mushrooms (*contains soy*), shredded cabbage, scallions, gochujang mayo (*contains soy*), soft tortilla (*contains gluten*).</p>
+                <p>Description: Imagine smoky, BBQ mushrooms that hit with just the right amount of spice. It's a flavor explosion that’s totally addictive and keeps you coming back for more.</p>
+            </div>
+        </div>
+
+        <!-- Mango & Avocado Quinoa Wrap -->
+        <div class="menu-item" onclick="toggleDetails(this)">
+            <img src="images/mango-avocado-quinoa.jpg" alt="Mango & Avocado Quinoa Wrap">
+            <h3>Mango & Avocado Quinoa Wrap</h3>
+            <div class="menu-details">
+                <p>Price: $9.00</p>
+                <p>Ingredients: Mango, avocado, quinoa, arugula, lime, spinach wrap (*contains gluten*).</p>
+                <p>Description: This one’s all about freshness. Sweet mango, creamy avocado, and quinoa for that hearty vibe. It’s bright, it’s bold, and it’s everything you want when you need to freshen up your day.</p>
+            </div>
+        </div>
+
+        <!-- Roasted Sweet Potato and Black Bean Burrito -->
+        <div class="menu-item" onclick="toggleDetails(this)">
+            <img src="images/roasted-sweet-potato.jpg" alt="Roasted Sweet Potato and Black Bean Burrito">
+            <h3>Roasted Sweet Potato and Black Bean Burrito</h3>
+            <div class="menu-details">
+                <p>Price: $8.50</p>
+                <p>Ingredients: Roasted sweet potatoes, black beans, corn, avocado, chipotle lime sauce (*contains soy*), flour tortilla (*contains gluten*).</p>
+                <p>Description: Roasted sweet potatoes and black beans with a smoky chipotle lime kick. It’s hearty, warming, and gives you all those cozy, satisfying vibes in every bite.</p>
+            </div>
+        </div>
+      
+        </div>
+
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer>
