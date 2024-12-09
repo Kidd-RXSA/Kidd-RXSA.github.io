@@ -1,159 +1,332 @@
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", Arial, sans-serif;
-  }
-  
-  /* Body Style */
-  body {
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Navbar Style */
-  .navbar {
-    background-color: #ffcc66;
-    padding: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    text-decoration: none;
-    font-size: 56px;
-    font-weight: bold;
-    color: #333;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #1F3B4D;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a {
+  font-family: 'Fredoka', sans-serif;
+  text-decoration: none;
+  font-size: 24px;
+  color: #5AC8FA;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF6F61;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #1F3B4D;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #fff;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #5AC8FA;
+}
+
+/* Hero Section Styling */
+.hero {
+  background-color: #5AC8FA;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 19px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Animal Card Section */
+.animal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.animal-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animal-card:hover {
+  transform: translateY(-5px);
+}
+
+.animal-card img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.animal-card h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 24px;
+  color: #1F3B4D;
+  margin-bottom: 10px;
+}
+
+.animal-card p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.profile-link {
+  text-decoration: none;
+  background-color: #FF6F61;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.profile-link:hover {
+  background-color: #E65850;
+}
+
+/* Animal Profile Page Styling */
+.animal-profile {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+.profile-card img {
+  max-width: 300px; 
+  border-radius: 10px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  max-width: 600px;
+}
+
+.profile-card h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 32px;
+  color: #1F3B4D;
+  margin-bottom: 15px;
+}
+
+.profile-card p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.adopt-btn {
+  background-color: #5AC8FA;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.adopt-btn:hover {
+  background-color: #FF6F61;
+}
+
+/* Content Section for Volunteer and Donate */
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content h2 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 28px;
+  color: #1F3B4D;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.5;
+  margin: 15px 0;
+  max-width: 800px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  max-width: 800px;
+  text-align: left;
+}
+
+.content ul li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+.content ul li::before {
+  color: #5AC8FA;
+  font-weight: bold;
+  display: inline-block;
+  width: 20px;
+  margin-left: -20px;
+}
+
+.donate-btn {
+  text-decoration: none;
+  background-color: #FF6F61;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+  background-color: #E65850;
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: #1F3B4D;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #0073e6;
-  }
-  
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffcc66;
-    list-style: none;
-    padding: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-menu a {
-    color: #333;
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .dropdown-menu a:hover {
-    background-color: #e6b800;
-  }
-  
-  /* Hero styling */
-  .hero {
-    background-image: url("../images/hero-background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .hero h1 {
-    font-size: 40px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Animal Profile */
-  .animal {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .animal-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  Footer style footer {
-    background-color: #ffcc66;
-    padding: 10px;
-    text-align: center;
-    margin-top: auto;
-    color: #333;
-  }
-  
-  /* Media  */
-  @media (max-width: 768px) {
-    .nav-links {
       flex-direction: column;
       align-items: center;
       gap: 10px;
-    }
-  
-    .hero h1 {
-      font-size: 2em;
-    }
-  
-    .animal-profile {
-      padding: 15px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .hero {
-      height: 200px;
-    }
-  
-    .hero h1 {
-      font-size: 1.5em;
-    }
-  
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .dropdown-menu {
-      position: static;
-    }
+
+  .animal-card {
+      max-width: 100%;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 29px;
+  }
+
+  .hero p {
+      font-size: 16px;
+  }
+
+  .profile-card img {
+      max-width: 100%; 
+  }
+
+  .profile-card p {
+      font-size: 16px; 
+  }
+}
