@@ -62,7 +62,7 @@ function reactToAttackButton() {
 }
 
 function reactToJumpRightButton() {
-    jumpRight(3);
+    jumpRight();
 }
 
 function reactToJumpLeftButton() {
