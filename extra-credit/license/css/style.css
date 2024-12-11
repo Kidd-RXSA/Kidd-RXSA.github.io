@@ -12,19 +12,136 @@
     border: 2px solid;
     border-radius: 20px;
     padding: 24px;
+    background: linear-gradient(to bottom right, #ffdf87, #eea853) ;
+    color: #000000;
+    font-family: Arial, sans-serif;
 }
 
 #left-side {
     display: inline-block;
     width: 65%;
+    vertical-align: top;
 }
 
 #right-side {
     display: inline-block;
     width: 34%;
+    text-align: center;
 }
 
-#id-and-experiation {
-    display: inline-block;
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #002366;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;   
+}
 
+
+h4 {
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#personal-info {
+    margin-top: 10px;
+}
+
+#address {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#id-and-expiration > div {
+    display: inline-block;
+    width: 49%;
+    font-size: 14px;
+}
+
+#id-and-expiration span {
+    font-weight: bold;
+    color: red;
+}
+
+
+#small-pic-container img {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    opacity: 0.7;
+}
+
+#data-left, #data-right {
+    display: inline-block;
+    width: 48%;
+    font-size: 14px;
+}
+
+#data-fields {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+#data-fields div span {
+    font-weight: bold;
+    color: red;
+}
+
+#signature {
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#right-side {
+    display: inline-block;
+    width: 34%;
+    text-align: center;
+}
+
+#right-side img {
+    width: 100%;
+    height: auto;
+}
+
+#donor-and-real-id > div {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#donor i {
+    color: red;
+}
+
+#real-id  {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: gold;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    
+}
+
+
+
+h4 {
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: #000000;
+    padding: 5px 10px;
 }
